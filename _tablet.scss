@@ -1,0 +1,52 @@
+@media (max-width: 1034px){
+.center{  padding-left:calc(50% - 393px);
+    padding-right:calc(50% - 393px);
+}    
+.header{
+    background-image:  url(img/Star\ 2.svg), url(img/header-3.svg), url(img/heading-5.svg), url(img/heading-6.svg), url(img/star-telrphone.svg);
+    background-repeat: no-repeat;
+    background-position: 63px 94px, 156px 69px, 600px 538px, 700px 568px, 670px -85px;
+    padding-bottom: 115px;
+}
+.animated{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.game{
+    gap: 50px;
+    flex-direction: column;
+&__box{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+&__box{
+    height: 550px;
+}   
+}
+.play{
+    &__box{
+        gap: 32px;
+        padding: 29px 29px 33px 29px;
+        order: 2;
+       }
+    &__img{
+    width: 100%;
+    order: 1;
+       }
+    &__card{
+        justify-content: center;
+    }
+}
+
+
+
+
+
+}
+

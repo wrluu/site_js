@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.montserrat-uniquifier {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.header {
+    background-color: rgb(225, 255, 143);
+    background-image: url(img/heder-1.svg), url(img/Star\ 2.svg), url(img/header-3.svg), url(img/heading-5.svg), url(img/heading-6.svg);
+    background-repeat: no-repeat;
+    background-position: 850px -350px, 63px 94px, 156px 69px, 948px 538px, 1013px 568px;
+    padding-bottom: 156px;
+    padding-top: 196px;
+
+    &__content {
+        max-width: 770px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 64px;
+        letter-spacing: 0px;
+        line-height: 78px;
+    }
+
+    &__heading {
+        font-weight: 400;
+        font-size: 24px;
+        max-width: 720px;
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        background-color: black;
+        border-radius: 60px;
+        border: 1px solid rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 24px;
+        font-family: inherit;
+        display: inline-block;
+        text-align: center;
+        line-height: 66px;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #FFFFFF;
+            color: black;
+        }
+    }
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.animated {
+    background-color: rgb(188, 236, 48);
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 30px;
+    letter-spacing: 4%;
+}
+
+.content {
+    background-color: rgb(32, 32, 39);
+    background-image: url(img/Star7.svg), url(img/Star__green_small.svg), url(img/Star_green-big.svg);
+    background-repeat: no-repeat;
+    background-position: 980px 77px, 25px 770px, 40px 822px;
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 72px;
+        padding-bottom: 50px;
+    }
+
+    &__info {
+        padding-top: 94px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    &__heading {
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        font-size: 24px;
+    }
+}
+
+.game {
+    display: flex;
+    gap: 32px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &__box {
+        display: block;
+        background-color: white;
+        width: 378px;
+        border-radius: 30px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 32px 32px 36px 32px;
+    }
+
+    &__namber {
+        background-color: rgb(247, 247, 247);
+        width: 92px;
+        height: 30px;
+        border-radius: 52px;
+        font-weight: 500;
+        font-size: 16px;
+        padding-left: 16px;
+        padding-top: 9px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 32px;
+    }
+}
+
+.card__box:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    z-index: 1;
+    transition: 2s;
+}
+
+.play-section {
+    background-color: rgb(32, 32, 39);
+    background-image: url(img/Star-play.svg), url(img/Star_green-big.svg), url(img/Star-play-bottom.svg), url(img/Star-play-bottom-big.svg);
+    background-repeat: no-repeat;
+    background-position: 1277px 47px, 1320px 126px, 1249px 3414px, 1319px 3366px;
+}
+
+.play {
+    padding-top: 46px;
+    padding-bottom: 144px;
+    display: flex;
+    gap: 72px;
+    flex-direction: column;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+        font-size: 64px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+    &__cards {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: #FFFFFF;
+        border-radius: 30px;
+
+        &--revers {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        padding: 48px 48px 48px 48px;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    &__info {
+        font-weight: 400;
+        font-size: 24px;
+        width: 457px;
+    }
+
+    &__button {
+        width: 247px;
+        height: 66px;
+        background-color: black;
+        border-radius: 60px;
+        border: 1px solid rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-weight: 600;
+        font-size: 24px;
+        font-family: inherit;
+        display: inline-block;
+        text-align: center;
+        line-height: 66px;
+        text-decoration: none;
+
+        &:hover {
+            cursor: pointer;
+            background-color: #FFFFFF;
+            color: black;
+        }
+    }
+}
+
+.footer {
+    background-color: rgb(188, 236, 48);
+    padding-top: 60px;
+    padding-bottom: 61px;
+    font-weight: 600;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+@import "tablet";
+@import "telephone";
